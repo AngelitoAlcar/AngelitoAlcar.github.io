@@ -1,0 +1,179 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    background-image: url(../RecipeCreate/condimentoscreate.jpg);
+    height: 130vh;
+    background-size: cover;
+    
+    
+}
+
+.div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(5px); 
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    border-radius: 1%;
+    box-shadow:  5px 5px 14px rgba(0, 0, 0, 0.32);
+    width: 55vw;
+    height: 90vh;
+    margin-top: 2vw;
+}
+
+.h1 .input .label .dietas .check{
+    font-family: 'Inconsolata', monospace;
+}
+
+
+.h1{
+    color: #945555;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.input{
+    margin: 1vw;
+    padding:0.2vw;
+}
+.label{
+    margin: 0.2vw;
+    padding-right: 10px;
+    /* font-size: 15px; */
+    font-weight: 600;
+    color: #000000;
+
+}
+
+.dietas{
+    text-align: center;
+    margin: 0.6vw;
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: #3d3a39;
+}
+
+
+.inputC{
+    margin: 0.3vw;
+}
+
+.check{
+
+    font-weight: 600;
+    margin: 0.5vw;
+    text-align: center;
+    color: #3d3a39;
+}
+
+.boton {
+    position: relative;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 1vw;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: #EDEDE9;
+    background-color: #D5BDAF;
+   }
+   
+   .boton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .boton:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   .boton::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   .boton::after {
+    background-color: #e3ddda;
+   }
+   
+   .boton:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }
+
+
+   .back {
+    position: relative;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 15px;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: #F5EBE0;
+    background-color: #c3b9b0;
+   }
+   
+   .back:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .back:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   .back::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   .back::after {
+    background-color: #e3ddda;
+   }
+   
+   .back:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }
+
+
+.error{
+    color: #ff002b;
+}
+

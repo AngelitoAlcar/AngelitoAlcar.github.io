@@ -1,0 +1,149 @@
+.contenedor{
+    background-image: url(../RecipeDetail/WallpaperDog-20491949.jpg);
+    height: 159vh;
+    width: 149;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.div{
+  margin: 9.5vw;
+  padding: 1vw;
+  border-radius: 15px;
+  background-color: #363434;
+  height: 150vh;
+  width: 80vw;
+  opacity: 0.9;
+}
+
+
+.h1{
+    font-size: 2vw;
+    color: #d4d0d3;
+    padding: 0.5vw;
+  }
+  
+.h3{
+   font-size: 1vw;
+    color: #d4d0d3;
+    padding: 0.5vw;
+}
+
+.h4{
+  font-size: 1vw;
+    color: #d4d0d3;
+    padding: 0.5vw;
+}
+
+.pasos{
+  font-size: 0.9vw;
+    color: #d4d0d3;
+    padding: 0.5vw;
+}
+
+.dietas{
+   font-size: 0.9vw;
+    display: block;
+    color: #d4d0d3;
+    padding: 0.5vw;
+    margin: 1vw;
+}
+
+.img{
+  height: 30vh;
+  width: 20vw;
+}
+
+.load {
+    width: 20vh;
+    height: 10vw;
+    line-height: 50px;
+    padding-top: 10vw;
+    margin-right: 10vw; 
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    padding: 5vw;
+    margin: 0 auto;
+  }
+  
+  .load span {
+    display: inline-block;
+    width: 2.5vh;
+    height: 1.2vw;
+    background: #d4d0d3;
+    border-radius: 50px;
+    animation: up-down6 0.5s ease-in infinite alternate;
+  }
+  
+  .load span:nth-child(2) {
+    background: #d4d0d3;
+    animation-delay: 0.16s;
+  }
+  
+  .load span:nth-child(3) {
+    background: #d4d0d3;
+    animation-delay: 0.32s;
+  }
+  
+  .load span:nth-child(4) {
+    background: #d4d0d3;
+    animation-delay: 0.48s;
+  }
+  
+  @keyframes up-down6 {
+    0% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+.containerLoad{
+  margin-top: 10vw;
+}
+
+.boton {
+    font-size: 1.2vw;
+    color:  #f2e9e4;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    margin-top: 1vw;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  .boton:focus,
+  .boton:hover {
+    color: #c9ada7;
+  }
+  
+  .boton:focus:after,
+  .boton:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .boton:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 0.3vw;
+    background-color: #c9ada7;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }

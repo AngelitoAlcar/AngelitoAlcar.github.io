@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+}
+
+
+.container{
+    background-image: url(./wallpaper.jpg);
+    height: 100vh;
+    background-size: 200vh;
+    
+}
+
+
+.h1{
+
+    font-size: 30px;
+    font-family: 'Uchen', serif;
+    align-items: center;
+    padding-top: -1vh;
+    color: #3cb498;
+
+}
+
+button {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+ }
+ 
+ button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+ }
+ 
+ @keyframes pulse512 {
+  0% {
+   box-shadow: 0 0 0 0 #05bada66;
+  }
+ 
+  70% {
+   box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+ 
+  100% {
+   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+ }
+
+.licence {
+    font-family: 'Uchen', serif;
+    color: white;
+    padding-left: 70vh;
+    bottom: 35px;
+    margin-right:65px;
+    position: absolute;
+    float:right;
+      
+}
+
+

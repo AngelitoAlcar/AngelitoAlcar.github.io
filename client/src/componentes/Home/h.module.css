@@ -1,0 +1,87 @@
+.container{
+    /* background-color: blueviolet; */
+    background-image: url(./Fondohome.jpg);
+    height: 110vh;
+    background-size: cover;
+    padding: 20px;
+}
+
+.botonCrearRec{
+    font-size: 18px;
+    -webkit-text-stroke: 0.5px rgb(31, 30, 30);   
+    color: transparent;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  .botonCrearRec:focus,
+  .botonCrearRec:hover {
+    color: #4A4E69;
+  }
+  
+  .botonCrearRec:focus:after,
+  .botonCrearRec:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .botonCrearRec:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #e7d7c1;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+  .recetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+
+
+ 
+ @keyframes animation321 {
+  0% {
+   background: #22223B;
+   transform: translateX(var(--displace));
+  }
+ 
+  100% {
+   background: #847a83;
+   transform: translateX(00px);
+  }
+ }
+ 
+
+.loading{
+  position: relative;
+  border:24px solid #0000;
+  border-radius:50%;
+  animation: piefill 2s linear infinite;
+}
+
+@keyframes piefill {
+  0% , 19%{ border-color: #0000 #0000 #0000 #0000 }
+  20% , 39%{ border-color: #fff #0000 #0000 #0000 }
+  40% , 59%{ border-color: #fff #fff #0000 #0000 }
+  60% , 79%{ border-color: #fff #fff #fff #0000 }
+  80% , 100% { border-color: #fff #fff #fff #fff }
+
+}

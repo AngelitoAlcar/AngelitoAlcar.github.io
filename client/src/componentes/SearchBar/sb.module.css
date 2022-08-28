@@ -1,0 +1,81 @@
+/* From uiverse.io by @alexruix */
+/* From uiverse.io by @alexruix */
+.input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #4A4E69;
+   }
+   
+   .input::placeholder {
+    color: #777;
+   }
+   
+   .input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+   
+   
+   
+   
+   
+   
+   
+  
+  .botonCrearRec{
+      font-size: 18px;
+      -webkit-text-stroke: 0.5px rgb(31, 30, 30);   
+      color: transparent;
+      color: #e1e1e1;
+      font-family: inherit;
+      font-weight: 800;
+      cursor: pointer;
+      position: relative;
+      border: none;
+      background: none;
+      text-transform: uppercase;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: color;
+    }
+    
+    .botonCrearRec:focus,
+    .botonCrearRec:hover {
+      color: #4A4E69;
+    }
+    
+    .botonCrearRec:focus:after,
+    .botonCrearRec:hover:after {
+      width: 100%;
+      left: 0%;
+    }
+    
+    .botonCrearRec:after {
+      content: "";
+      pointer-events: none;
+      bottom: -2px;
+      left: 50%;
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background-color: #e7d7c1;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: width, left;
+    }
+  
+  
+  
+    
