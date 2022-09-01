@@ -46,15 +46,20 @@ export default function RecipeCreate(){
 
 
     function handleChange(e){
+        // va guardando todo lo que el usuario escribe, en el estado input
         setInput({
+            //trae todo lo que ya tenia
             ...input,
-            [e.target.name] : e.target.value 
+            // setea el e.target.name en e.target.value
+            // este name hace referencia al tag input
+            [e.target.name] : e.target.value
+
         })
         setErrores(validacion({
             ...input,
-            [e.target.name]: e.target.value
+            [e.target.name] : e.target.value
         }))
-        console.log(input)
+        console.log(input) 
     }
 
 

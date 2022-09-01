@@ -88,7 +88,7 @@ export default function HomePage(){
      </div>
     
         <div>
-        <FilterDiet/>
+        <FilterDiet setPagActual={setPagActual}/>
 
         </div>
 
@@ -110,7 +110,7 @@ export default function HomePage(){
             {/* <DbOrApi setPagActual={setPagActual} setOrden={setOrden}/> */}
         </div>
 
-        <SearchBar />
+        <SearchBar setPagActual={setPagActual}/>
         
         <Pagination
         recPorPag = {recPorPag}

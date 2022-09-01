@@ -5,7 +5,7 @@ import { recipeByName } from '../../actions/actions'
 import sb from '../SearchBar/sb.module.css'
 
 
-export default function SearchBar(){
+export default function SearchBar({setPagActual}){
 
     const dispatch = useDispatch()
     const [name, setName] = useState("")
@@ -20,6 +20,7 @@ export default function SearchBar(){
         if(name !== ''){
             dispatch(recipeByName(name))
             setName("")
+         setPagActual(1)
         }else{
             alert("Por favor introducir una receta existente")
         }

@@ -4,11 +4,12 @@ import { filterByDiet } from "../../../actions/actions";
 import style from './d.module.css';
 
 
-export default function FilterDiet(){
+export default function FilterDiet({setPagActual}){
 
     const dispatch = useDispatch()  
     function handleFiltroByDieta(e){ 
         dispatch(filterByDiet(e.target.value))
+        setPagActual(1)
      }
          
 
